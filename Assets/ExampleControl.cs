@@ -24,7 +24,7 @@ public class ExampleControl : MonoBehaviour
     }
     void Movement()
     {
-        _componentTransform.position = new Vector2(_componentTransform.position.x + xSpeed * xDirection * Time.deltaTime,
+        _componentTransform.position = new Vector2(_componentTransform.position.x + xSpeed * 2 * xDirection * Time.deltaTime,
           _componentTransform.position.y);
         if (_componentTransform.position.x >= 7.36f)
         {
